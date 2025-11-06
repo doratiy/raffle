@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.prize {
+    width: 23%;
+    height: 150px;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    border-radius: 10px;
+    background-color: plum;
+    border: 2px solid purple;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+body {
+    background-image: url("фон.jpg");
+}
+
+.prize:nth-child(4n) {
+    margin-right: 0;
+}
+
+.prize:hover{
+    opacity: 0.5;
+}
+
+.button__block {
+    display: flex;
+    justify-content: center;
+}
+
+
+.prize__button {
+    text-align: center;
+    background-color: plum;
+    border-radius: 5px;
+    border: 1px solid purple;
+    padding: 2.5px;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: large;
+    animation: pulse 1.5s infinite;
+}
+
+.prize__result {
+    margin: 20px auto; 
+    text-align: center;
+    font-size: large;
+    margin-top: 20px;
+    background-color: plum;
+    border-radius: 5px;
+    border: 1px solid purple;
+    padding: 2.5px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+
+.active {
+    background-color: red;
+}
