@@ -1,5 +1,3 @@
-let min = 1;
-let max = 6;
 let prize_values = [];
 
 
@@ -29,5 +27,6 @@ function get_prize() {
     }
     prize_result.textContent = prize[number].querySelector(".prize__name").textContent;
 }
+
 
 button.addEventListener("click", get_prize);
